@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Range Slider</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Standard</h1>
+			<p>Cost per account</p>
+			<p>per month</p>
+
+			<div class="slider-container">
+				<span class="span1">3 - 10 Accounts</span>
+				<span class="span1-1" id="price10">$10</span>
+				<span class="span2">11 - 100 Accounts</span>
+				<span class="span2-1" id="price9">$9</span>
+				<span class="span3">101 - 1000 Accounts</span>
+				<span class="span3-1" id="price8">$8</span>
+				<span class="span4">11 - 100 Accounts</span>
+				<span class="span4-1" id="contact-us">Contact us</span>
+				<input
+					type="range"
+					min="1"
+					max="100"
+					value="25"
+					id="myRange"
+					class="slider"
+				/>
+			</div>
+			<p>
+				Connect an infinite number of accounts to our core copy trading service
+				via our competitive scaling price model
+			</p>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
