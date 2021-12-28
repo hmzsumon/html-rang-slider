@@ -7,6 +7,16 @@ const contactUs = document.getElementById('contact-us');
 myRange.addEventListener('input', function () {
 	// document.getElementById('myRangeValue').innerHTML = myRange.value;
 
+	if (myRange.value < 50 && myRange.value > 25) {
+		myRange.value = 25;
+	} else if (myRange.value < 25 && myRange.value > 1) {
+		myRange.value = 1;
+	} else if (myRange.value > 50 && myRange.value < 75) {
+		myRange.value = 75;
+	} else if (myRange.value > 75 && myRange.value < 100) {
+		myRange.value = 100;
+	}
+
 	if (myRange.value == 1) {
 		price10.classList.add('show-price');
 	} else if (myRange.value == 25) {
